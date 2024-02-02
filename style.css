@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body {
     font-family: "Nunito", sans-serif;
     margin: 0px;
@@ -6,6 +7,7 @@ body {
 }
 
 nav {
+    margin-top: 10px;
     display: flex;
     /* border: 2px solid black ; */
     height: 10vh;
@@ -13,7 +15,6 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-
 #logo {
     display: flex;
     justify-content: center;
@@ -30,12 +31,16 @@ nav {
     /* border: 2px solid black; */
     margin-right: 50px;
 }
-
-.text>ul {
+.text{
     display: flex;
-    list-style: none;
+}
+.text>p {
+    display: flex;
+    /* list-style: none; */
+    font-weight: bold;
     cursor: pointer;
     padding: 8px 16px;
+    font-size: 25px;
     margin: 10px;
     /* border: 2px solid black; */
     gap: 30px;
@@ -45,19 +50,23 @@ nav {
     background-color: black;
     color: white;
     padding: 14px 24px 16px;
+    font-size: 25px;
     border-radius: 10px;
+    font-weight: bold;
     cursor: pointer;
 }
 
 #btn:hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-5px);
+    background-color: rgb(36, 34, 34);
+    rotate: -2deg;
 }
 
-.text>ul>li:hover {
-    transition: all 0.3s ease-in-out;
-    text-decoration: underline;
-    transform: scale(1.1);
+.text>p:hover {
+    /* transition: all 0.3s ease-in-out; */
+    border-bottom: 2px solid black;
+    /* transform: scale(1.1); */
 }
 
 #responsive-menu {
@@ -66,54 +75,66 @@ nav {
 
 /* nav ends here! */
 /* page 1 */
-#main {
+.heading{
+    font-size: 35px;
+    padding: 3%;
+    padding-top: 2%;
+    cursor: pointer;
+}
+h1{
+    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+}
+.design:hover{
+    /* font-weight: bolder; */
+    color: #2723f9;
+    text-shadow: 0 2px 1px black;
+}
+.align, .build, .design{
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+}
+.align:hover{
+    color: rgb(191, 2, 191);
+    text-shadow: 0 2px 1px black;
+}
+.build:hover{
+    color: rgb(64, 105, 2);
+    text-shadow: 0 2px 1px black;
+}
+.heading_btn{
+    color: white;
+    background-color: #0501f6;
+    width: 330px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    transition:  all 0.4s ease-in-out;
 }
-
-#main-heading {
-    /* border: 2px solid black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 85%;
+.heading_btn:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    rotate: -5deg;
+    background-color: #05027d;
 }
-
-#main-heading>h1 {
-    font-size: 4rem;
-}
-
-#main-heading>h1>span {
-    font-size: 1.5em;
-}
-
-#one {
-    color: purple;
-    fill: purple;
-}
-
-#two {
-    color: blue;
-    fill: blue;
-}
-
-#three {
-    color: green;
-    fill: green;
-}
-
 #main-pic {
     /* border: 2px solid black; */
-    margin: 25px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 #main-pic>img {
     /* border: 2px solid black; */
-    height: 900px;
-    width: 1400px;
+    /* height: 900px; */
+    width: 95%;
+    margin: 0 40px;
+    box-shadow: 0 0 70px rgb(253, 1, 224);
     border-radius: 10px;
 }
 
@@ -129,6 +150,7 @@ nav {
 #partners-heading {
     font-size: 2rem;
     margin: 25px;
+    font-weight: bold;
 }
 
 #partners-logos {
@@ -153,7 +175,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FFF500;
+    background:linear-gradient(45deg,#FFF500, #ffae00 ) ;
 }
 
 #heading-2 {
@@ -162,11 +184,11 @@ nav {
 }
 
 #heading-2>h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #heading-2>p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #content-2 {
@@ -186,27 +208,32 @@ nav {
 }
 
 #text2>p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #btn-2 {
     background-color: black;
     color: white;
-    margin: 50px auto;
-    padding: 16px 32px;
+    margin: 20px auto;
+    padding: 16px 20px;
+    text-align: center;
     border-radius: 10px;
+    font-size: 25px;
     cursor: pointer;
+    width: 190px;
 }
 
 #btn-2:hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    transform: rotate(20deg);
+    box-shadow: 0 0 30px rgb(246, 255, 0);
 }
 
 #img2>img {
-    height: 500px;
-    width: 800px;
-    border-radius: 10px;
+    height: 750px;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(255, 251, 0);
 }
 
 /* page2 ends here! */
@@ -216,7 +243,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(198, 148, 238);
+    background: linear-gradient(45deg, #e04ef0, #38015c) ;
 }
 
 #heading-3 {
@@ -225,11 +252,14 @@ nav {
 }
 
 #heading-3>h1 {
-    font-size: 3rem;
+    color: white;
+    text-shadow: 10px 2px black;
+    font-size: 3.5rem;
 }
 
 #heading-3>p {
     font-size: 1.5rem;
+    color: white;
 }
 
 #content-3 {
@@ -245,12 +275,14 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: white;
     flex-direction: column;
     margin-left: 25px;
 }
 
 #text3>p {
     font-size: 1.5rem;
+    color: white;
 }
 
 #btn-3 {
@@ -259,17 +291,20 @@ nav {
     margin: 50px auto;
     padding: 16px 32px;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
+    font-size: 25px;
 }
 
 #btn-3:hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+    transform: rotate(20deg);
+    box-shadow: 0 0 40px rgb(255, 63, 255);
 }
 
 #img3>img {
     height: 500px;
-    width: 800px;
+    width: 900px;
+    box-shadow: 0 0 80px rgb(255, 63, 255);
     border-radius: 10px;
 }
 
@@ -558,7 +593,7 @@ footer {
 }
 
 @media (max-width: 1050px) {
-    .text>ul {
+    .text>p {
         display: none;
     }
 
@@ -582,9 +617,7 @@ footer {
 
     /* nav ends here!  */
     /* page 1 */
-    #main-heading>h1 {
-        font-size: 2rem;
-    }
+    
 
     #main-pic>img {
         height: 200px;
